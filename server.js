@@ -10,6 +10,8 @@ const dev = process.env.NODE_ENV !== 'production';
 const app = next({ dev });
 const handle = app.getRequestHandler();
 
+var fs = require('fs');
+
 var options = {
   key: fs.readFileSync('/etc/letsencrypt/live/live.demetralife.com/privkey.pem'),
   cert: fs.readFileSync('/etc/letsencrypt/live/live.demetralife.com/fullchain.pem'),
