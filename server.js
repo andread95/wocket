@@ -5,7 +5,7 @@ const WebSocketServer = require('ws').Server;
 const child_process = require('child_process');
 const url = require('url');
 
-const port = parseInt(process.env.PORT, 10) || 3000;
+const port = parseInt(process.env.PORT, 10) || 443;
 const dev = process.env.NODE_ENV !== 'production';
 const app = next({ dev });
 const handle = app.getRequestHandler();
