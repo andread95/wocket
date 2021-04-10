@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useRef } from 'react';
 import Head from 'next/head';
-import styles from '../styles/demo.module.css';
+import styles from '../../styles/demo.module.css';
 
 const CAMERA_CONSTRAINTS = {
   audio: true,
