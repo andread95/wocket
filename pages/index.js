@@ -1,7 +1,6 @@
 import React, { useEffect, useState, useRef } from 'react';
 import Head from 'next/head';
 
-import 'bootstrap';
 
 function Home() {
   const {data, revalidate} = useSWR('/api/me', async function(args) {
